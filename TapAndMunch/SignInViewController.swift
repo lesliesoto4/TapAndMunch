@@ -20,5 +20,20 @@ class SignInViewController: UIViewController {
         signInLabel.text = "Welcome to Tap & Munch"
         signInImageView.image = #imageLiteral(resourceName: "tap&munch_icon")
     }
+    
+    // Unfinished
+    @IBAction func signInPressed(_ sender: AnyObject) -> Void {
+        print("Sign in tapped")
+    }
 
+    // Unfinished
+    @IBAction func forgotPasswordPressed(_ sender: AnyObject) -> Void {
+        print("Forgot password tapped")
+    }
+    
+    // Unfinished
+    @IBAction func signUpPressed(_ sender: AnyObject) -> Void {
+        print("Sign up tapped")
+    }
+    
 }
