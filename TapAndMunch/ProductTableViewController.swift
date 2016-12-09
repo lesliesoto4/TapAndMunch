@@ -1,5 +1,5 @@
 //
-//  ProductsTableViewController.swift
+//  ProductTableViewController.swift
 //  TapAndMunch
 //
 //  Created by Esther Rios on 12/9/16.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ProductsTableViewController: UITableViewController {
-
+class ProductTableViewController: UITableViewController {
+    
     var products: [Product]?
     
     override func viewDidLoad() {
@@ -23,35 +23,29 @@ class ProductsTableViewController: UITableViewController {
         
         product1.name = "Zazones Cuisine"
         //  product1.productImage = "background"
-        product1.cellImage = "food"
+        product1.cellImage = "food_icon"
         
         product2.name = "Mona"
         //  product2.productImage = "background"
-        product2.cellImage = "food"
+        product2.cellImage = "food_icon"
         
         product3.name = "Desecheo"
         //  product3.productImage = "background"
-        product3.cellImage = "food"
+        product3.cellImage = "food_icon"
         
         product4.name = "Atlantic Restaurant"
         //  product4.productImage = "background"
-        product4.cellImage = "food"
+        product4.cellImage = "food_icon"
         
         product5.name = "La Vista Smokehouse"
         //  product5.productImage = "background"
-        product5.cellImage = "food"
+        product5.cellImage = "food_icon"
         
         
         products = [product1, product2, product3, product4, product5]
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return 0
-    }
     
-    //Esther: This tells us how many rows the table view will have.
-    //Returns an Integer
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let p = products{
@@ -60,9 +54,7 @@ class ProductsTableViewController: UITableViewController {
         return 0
     }
     
-    //Esther: Returns a cell object.
     override func tableView(_ tableView:UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
         
