@@ -89,34 +89,6 @@
             </objects>
             <point key="canvasLocation" x="796" y="160.56971514242881"/>
         </scene>
-        <!--Product Table View Controller-->
-        <scene sceneID="ms1-5Z-qUz">
-            <objects>
-                <tableViewController id="KeT-UL-ff1" customClass="ProductTableViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="QKV-WN-Zt5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" id="fuf-yD-GVa">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fuf-yD-GVa" id="Xx4-nj-o49">
-                                    <frame key="frameInset" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="KeT-UL-ff1" id="Cvg-y2-976"/>
-                            <outlet property="delegate" destination="KeT-UL-ff1" id="uZr-Y7-HMb"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kYK-gJ-sit" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1710" y="161"/>
-        </scene>
         <!--Terms Condition View Controller-->
         <scene sceneID="aqb-71-VKj">
             <objects>
