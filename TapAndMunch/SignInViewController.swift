@@ -11,8 +11,8 @@ import UIKit
 class SignInViewController: UIViewController {
 
     // Dummy sign in parameters
-    let usernameActive = "user@tp.com"
-    let passwordActive = "12345"
+    let usernameActive = DummyUser().email
+    let passwordActive = DummyUser().password
     
     // Outlet variable initialization
     @IBOutlet weak var signInLabel: UILabel!
