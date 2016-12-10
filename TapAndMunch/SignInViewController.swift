@@ -44,13 +44,41 @@ class SignInViewController: UIViewController {
                 // TO DO LOG IN PROCESS
                 print("Logging in")
             }
+            else if (usernameInput == usernameActive) && (passwordInput != passwordActive) {
+                print("Correct email but incorrect password")
+                
+                // Creation of alert controller (message box)
+                let alertController = UIAlertController(title: "Incorrect Password", message: "The password you entered is incorrect. Please try again.", preferredStyle: .alert)
+                // Creation of dismissal button to be added to alert message box
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                //Addition of dismissal button to alert message box
+                alertController.addAction(defaultAction)
+                // Present message in foreground
+                self.present(alertController, animated: true, completion: nil)
+                
+                // Remove incorrect password
+                passwordInputTextField.text = ""
+                
+            }
             else {
-                // TO DO Incorrect email or password
                 print("Incorrect email or password")
+                
+                // Creation of alert controller (message box)
+                let alertController = UIAlertController(title: "Incorrect Credential", message: "The email and/or password you entered is incorrect. Please try again.", preferredStyle: .alert)
+                // Creation of dismissal button to be added to alert message box
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                //Addition of dismissal button to alert message box
+                alertController.addAction(defaultAction)
+                // Present message in foreground
+                self.present(alertController, animated: true, completion: nil)
+                
+                // Remove incorrect credentials
+                usernameInputTextField.text = ""
+                passwordInputTextField.text = ""
             }
         }
         else {
-            // TO DO Display alert message
+            // Catch errors
             print("One or both inputs do not exist")
         }
     }
