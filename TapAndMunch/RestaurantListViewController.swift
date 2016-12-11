@@ -12,10 +12,10 @@ class RestaurantListViewController: UIViewController, UITableViewDataSource, UIT
 
     @IBOutlet weak var tableView: UITableView!
     
-    let names = ["Pizzeria Don Quijote", "Off the Wall", "El Café de Tite", "Chalupas", "Café Rústico", "Happy Bowls"]
-    let price = ["$", "$$", "$", "$", "$$", "$$"]
-    let cuisine = ["Pizzeria", "Pub, Burgers, Chicken Wings", "Cafeteria", "Mexican", "Cafeteria", "Juice Bar"]
-    let images = [UIImage(named: "pizzeria_donq"), UIImage(named: "off_the_wall"), UIImage(named: "cafe_de_tite"), UIImage(named: "chalupas"), UIImage(named: "cafe_rustico"), UIImage(named:"happy_bowls")]
+    let names = ["Pizzeria Don Quijote", "Off the Wall", "El Café de Tite", "Chalupas", "Café Rústico", "Happy Bowls", "Friends Café"]
+    let price = ["$", "$$", "$", "$", "$$", "$$", "$"]
+    let cuisine = ["Pizzeria", "Pub, Burgers", "Cafeteria", "Mexican", "Cafeteria", "Cafeteria, Juice Bar", "Cafeteria"]
+    let images = [UIImage(named: "pizzeria_donq"), UIImage(named: "off_the_wall"), UIImage(named: "el_cafe_de_tite"), UIImage(named: "chalupas"), UIImage(named: "cafe_rustico"), UIImage(named:"happy_bowls"), UIImage(named:"friends_cafe")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class RestaurantListViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
         //return names.count
     }
     
