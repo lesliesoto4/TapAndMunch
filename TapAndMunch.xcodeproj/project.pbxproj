@@ -20,6 +20,7 @@
 		CE4D657E1DFB40BB008D63B3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D657D1DFB40BB008D63B3 /* SignInViewController.swift */; };
 		CEA58A271DFCC09700BDCF2A /* DummyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA58A261DFCC09700BDCF2A /* DummyUser.swift */; };
 		CEB6FF211DFC8E4500A6AEF7 /* TermsConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6FF201DFC8E4500A6AEF7 /* TermsConditionViewController.swift */; };
+		CEF9F61C1DFF42F00089AE1A /* RestaurantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9F61B1DFF42F00089AE1A /* RestaurantProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CE4D657D1DFB40BB008D63B3 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CEA58A261DFCC09700BDCF2A /* DummyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyUser.swift; sourceTree = "<group>"; };
 		CEB6FF201DFC8E4500A6AEF7 /* TermsConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsConditionViewController.swift; sourceTree = "<group>"; };
+		CEF9F61B1DFF42F00089AE1A /* RestaurantProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantProfileViewController.swift; path = ../../RestaurantProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				CEA58A261DFCC09700BDCF2A /* DummyUser.swift */,
 				A32C4F301DFF19AF00EBDCDB /* SettingsViewController.swift */,
 				A32C4F321DFF19C800EBDCDB /* OrderHistoryViewController.swift */,
+				CEF9F61B1DFF42F00089AE1A /* RestaurantProfileViewController.swift */,
 			);
 			path = TapAndMunch;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				A32C4F331DFF19C800EBDCDB /* OrderHistoryViewController.swift in Sources */,
 				A33AF6941DFCB0F2004ECCEF /* ProductCell.swift in Sources */,
 				A33AF6961DFCB127004ECCEF /* RestaurantListViewController.swift in Sources */,
+				CEF9F61C1DFF42F00089AE1A /* RestaurantProfileViewController.swift in Sources */,
 				CEB6FF211DFC8E4500A6AEF7 /* TermsConditionViewController.swift in Sources */,
 				CE4D656C1DFB3A23008D63B3 /* AppDelegate.swift in Sources */,
 				A32C4F351DFF2D3800EBDCDB /* PastOrderCell.swift in Sources */,
