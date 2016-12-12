@@ -11,6 +11,7 @@ import UIKit
 class RestaurantListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     let names = ["Pizzeria Don Quijote", "Off the Wall", "El Café de Tite", "Chalupas", "Café Rústico", "Happy Bowls", "Friends Café"]
     let price = ["$", "$$", "$", "$", "$$", "$$", "$"]
@@ -19,7 +20,7 @@ class RestaurantListViewController: UIViewController, UITableViewDataSource, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        searchBar.backgroundImage = UIImage()
         // Do any additional setup after loading the view.
     }
     
