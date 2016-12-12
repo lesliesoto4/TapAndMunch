@@ -10,6 +10,9 @@ import UIKit
 
 class SettingsCell: UITableViewCell {
 
+    @IBOutlet weak var account_info: UILabel!
+    @IBOutlet weak var account_subinformation: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
