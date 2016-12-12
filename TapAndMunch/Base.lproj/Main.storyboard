@@ -210,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="1568.8" y="160.56971514242881"/>
         </scene>
-        <!--View Controller-->
+        <!--Order History View Controller-->
         <scene sceneID="E1W-kq-bZ6">
             <objects>
-                <viewController id="OMg-Do-niy" sceneMemberID="viewController">
+                <viewController id="OMg-Do-niy" customClass="OrderHistoryViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cUU-SZ-JQ0"/>
                         <viewControllerLayoutGuide type="bottom" id="MKZ-JU-FmL"/>
@@ -277,12 +277,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qc8-1s-im8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1569" y="-492"/>
+            <point key="canvasLocation" x="1569" y="-493"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="KJ4-PA-Ypn">
             <objects>
-                <viewController id="VIX-RA-z2I" sceneMemberID="viewController">
+                <viewController id="VIX-RA-z2I" customClass="SettingsViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ea1-iF-D5a"/>
                         <viewControllerLayoutGuide type="bottom" id="7LK-eG-kN7"/>
@@ -315,9 +315,28 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back_arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="54P-v8-bzS">
-                                        <rect key="frame" x="-1" y="29" width="46" height="29"/>
+                                        <rect key="frame" x="-1" y="30" width="46" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEd-RV-B8c">
+                                        <rect key="frame" x="8" y="81" width="184" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="21"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFc-fu-r90">
+                                        <rect key="frame" x="-4" y="52" width="383" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Dm-h3-1Bb">
+                                        <rect key="frame" x="35" y="129" width="305" height="405"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.47843137250000001" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
