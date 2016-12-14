@@ -14,6 +14,7 @@
 		A32C4F371DFF60C600EBDCDB /* RestaurantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C4F361DFF60C600EBDCDB /* RestaurantProfileViewController.swift */; };
 		A33AF6941DFCB0F2004ECCEF /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AF6931DFCB0F2004ECCEF /* ProductCell.swift */; };
 		A33AF6961DFCB127004ECCEF /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AF6951DFCB127004ECCEF /* RestaurantListViewController.swift */; };
+		A3A40E4A1E01B15E0092B7A8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A40E491E01B15E0092B7A8 /* AccountViewController.swift */; };
 		CE4D656C1DFB3A23008D63B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D656B1DFB3A23008D63B3 /* AppDelegate.swift */; };
 		CE4D65711DFB3A23008D63B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4D656F1DFB3A23008D63B3 /* Main.storyboard */; };
 		CE4D65731DFB3A23008D63B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4D65721DFB3A23008D63B3 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		A32C4F361DFF60C600EBDCDB /* RestaurantProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantProfileViewController.swift; sourceTree = "<group>"; };
 		A33AF6931DFCB0F2004ECCEF /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		A33AF6951DFCB127004ECCEF /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		A3A40E491E01B15E0092B7A8 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE4D65681DFB3A23008D63B3 /* TapAndMunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapAndMunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4D656B1DFB3A23008D63B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4D65701DFB3A23008D63B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				A32C4F301DFF19AF00EBDCDB /* SettingsViewController.swift */,
 				A32C4F321DFF19C800EBDCDB /* OrderHistoryViewController.swift */,
 				A32C4F361DFF60C600EBDCDB /* RestaurantProfileViewController.swift */,
+				A3A40E491E01B15E0092B7A8 /* AccountViewController.swift */,
 			);
 			path = TapAndMunch;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				A32C4F2F1DFF198800EBDCDB /* SettingsCell.swift in Sources */,
 				CE4D657E1DFB40BB008D63B3 /* SignInViewController.swift in Sources */,
+				A3A40E4A1E01B15E0092B7A8 /* AccountViewController.swift in Sources */,
 				CEA58A271DFCC09700BDCF2A /* DummyUser.swift in Sources */,
 				A32C4F331DFF19C800EBDCDB /* OrderHistoryViewController.swift in Sources */,
 				A33AF6941DFCB0F2004ECCEF /* ProductCell.swift in Sources */,
