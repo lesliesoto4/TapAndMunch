@@ -28,8 +28,12 @@ class SignInViewController: UIViewController {
         signInImageView.image = #imageLiteral(resourceName: "tap&munch_icon")
     }
     
-    // Unfinished
     @IBAction func signInPressed(_ sender: AnyObject) -> Void {
+        // Do nothing
+    }
+    
+    // Validate log in
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Sign in tapped")
 
         let usernameInput = usernameInputTextField.text

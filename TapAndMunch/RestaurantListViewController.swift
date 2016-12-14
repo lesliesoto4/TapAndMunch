@@ -10,6 +10,8 @@ import UIKit
 
 class RestaurantListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var signInTransition: String = ""
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
