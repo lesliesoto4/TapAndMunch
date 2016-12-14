@@ -28,12 +28,11 @@ class SignInViewController: UIViewController {
         signInImageView.image = #imageLiteral(resourceName: "tap&munch_icon")
     }
     
-    @IBAction func signInPressed(_ sender: AnyObject) -> Void {
-        // Do nothing
-    }
-    
-    // Validate log in
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    @IBAction func signInPressed(_ sender: AnyObject) {
+        
+        
+        // Validate log in
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Sign in tapped")
 
         let usernameInput = usernameInputTextField.text
@@ -45,7 +44,16 @@ class SignInViewController: UIViewController {
             print("Both inputs do exist")
             
             if (usernameInput == usernameActive) && (passwordInput == passwordActive){
-                // TO DO LOG IN PROCESS
+                // Get access to the storyboard
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                // Get view controller from the storyboard
+                let restListView = storyboard.instantiateViewController(withIdentifier: "restList") as! RestaurantListViewController
+                
+                self.present(restListView, animated: true, completion: nil)
+                
+                
+                
                 print("Logging in")
             }
             else if (usernameInput == usernameActive) && (passwordInput != passwordActive) {
