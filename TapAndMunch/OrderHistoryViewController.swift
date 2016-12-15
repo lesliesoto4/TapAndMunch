@@ -41,7 +41,6 @@ class OrderHistoryViewController: UIViewController, UITableViewDataSource, UITab
         return (cell)
     }
 
-    
     @IBAction func backButton(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -49,4 +48,13 @@ class OrderHistoryViewController: UIViewController, UITableViewDataSource, UITab
         
         self.present(accountView, animated: true, completion: nil)
     }
+    
+    @IBAction func orderAgain(_ sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let addressOrderView = storyboard.instantiateViewController(withIdentifier: "addressOrder") as! AddressOrderViewController
+        
+        self.present(addressOrderView, animated: true, completion: nil)
+    }
+    
 }

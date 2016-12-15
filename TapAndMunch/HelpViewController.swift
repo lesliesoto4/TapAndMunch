@@ -14,8 +14,11 @@ class HelpViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func backButton(_ sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let accountView = storyboard.instantiateViewController(withIdentifier: "accountInfo") as! AccountViewController
+        
+        self.present(accountView, animated: true, completion: nil)
     }
 }
