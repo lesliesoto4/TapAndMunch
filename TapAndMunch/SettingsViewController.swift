@@ -12,13 +12,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     
-    let tableItems = ["Name", "Email", "Password", "Address", "Payment Options"]
-    let dummyValues = ["Juan Del Pueblo", "juan@upr.edu", "1234", "Stefani UPRM, Mayagüez, P.R. 00682", "PayPal"]
+    let tableItems = ["Name", "Email", "Password", "Address", "Payment Method"]
+    let dummyValues = ["Juan Del Pueblo", "user@tp.com", "", "Stefani UPRM, Mayagüez, P.R. 00682", "PayPal"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,5 +38,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         return (cell)
     }
+    
+    @IBAction func backButton(_ sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let accountView = storyboard.instantiateViewController(withIdentifier: "accountInfo") as! AccountViewController
+        
+        self.present(accountView, animated: true, completion: nil)
+    }
+    
 
 }

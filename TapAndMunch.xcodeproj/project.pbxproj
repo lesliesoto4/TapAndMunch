@@ -20,6 +20,8 @@
 		CE4D65731DFB3A23008D63B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4D65721DFB3A23008D63B3 /* Assets.xcassets */; };
 		CE4D65761DFB3A23008D63B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4D65741DFB3A23008D63B3 /* LaunchScreen.storyboard */; };
 		CE4D657E1DFB40BB008D63B3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D657D1DFB40BB008D63B3 /* SignInViewController.swift */; };
+		CE6F186C1E02574F00D058A3 /* ChooseOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F186B1E02574F00D058A3 /* ChooseOrderViewController.swift */; };
+		CE6F186E1E02642F00D058A3 /* AddressOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F186D1E02642F00D058A3 /* AddressOrderViewController.swift */; };
 		CEA58A271DFCC09700BDCF2A /* DummyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA58A261DFCC09700BDCF2A /* DummyUser.swift */; };
 		CEB6FF211DFC8E4500A6AEF7 /* TermsConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6FF201DFC8E4500A6AEF7 /* TermsConditionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		CE4D65751DFB3A23008D63B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4D65771DFB3A23008D63B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4D657D1DFB40BB008D63B3 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CE6F186B1E02574F00D058A3 /* ChooseOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseOrderViewController.swift; sourceTree = "<group>"; };
+		CE6F186D1E02642F00D058A3 /* AddressOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressOrderViewController.swift; sourceTree = "<group>"; };
 		CEA58A261DFCC09700BDCF2A /* DummyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyUser.swift; sourceTree = "<group>"; };
 		CEB6FF201DFC8E4500A6AEF7 /* TermsConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsConditionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 				A32C4F321DFF19C800EBDCDB /* OrderHistoryViewController.swift */,
 				A32C4F361DFF60C600EBDCDB /* RestaurantProfileViewController.swift */,
 				A3A40E491E01B15E0092B7A8 /* AccountViewController.swift */,
+				CE6F186B1E02574F00D058A3 /* ChooseOrderViewController.swift */,
+				CE6F186D1E02642F00D058A3 /* AddressOrderViewController.swift */,
 			);
 			path = TapAndMunch;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6F186E1E02642F00D058A3 /* AddressOrderViewController.swift in Sources */,
 				A32C4F2F1DFF198800EBDCDB /* SettingsCell.swift in Sources */,
+				CE6F186C1E02574F00D058A3 /* ChooseOrderViewController.swift in Sources */,
 				CE4D657E1DFB40BB008D63B3 /* SignInViewController.swift in Sources */,
 				A3A40E4A1E01B15E0092B7A8 /* AccountViewController.swift in Sources */,
 				CEA58A271DFCC09700BDCF2A /* DummyUser.swift in Sources */,

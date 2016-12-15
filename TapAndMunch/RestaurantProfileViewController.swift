@@ -30,9 +30,13 @@ class RestaurantProfileViewController: UIViewController {
         self.present(restListView, animated: true, completion: nil)
     }
     
+    // Takes user to GUI to choose meals
     @IBAction func orderRest(_ sender: AnyObject) {
-        // TO DO
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        let chooseOrderView = storyboard.instantiateViewController(withIdentifier: "chooseOrder") as! ChooseOrderViewController
+        
+        self.present(chooseOrderView, animated: true, completion: nil)
     }
     
     @IBAction func accountEditButton(_ sender: AnyObject) {

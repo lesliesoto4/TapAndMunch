@@ -41,4 +41,12 @@ class OrderHistoryViewController: UIViewController, UITableViewDataSource, UITab
         return (cell)
     }
 
+    
+    @IBAction func backButton(_ sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let accountView = storyboard.instantiateViewController(withIdentifier: "accountInfo") as! AccountViewController
+        
+        self.present(accountView, animated: true, completion: nil)
+    }
 }
