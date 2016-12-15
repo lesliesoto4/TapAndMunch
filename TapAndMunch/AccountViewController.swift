@@ -52,7 +52,11 @@ class AccountViewController: UIViewController {
     }
     
     @IBAction func helpMenu(_ sender: AnyObject) {
-        // TO DO
+ /*       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let helpView = storyboard.instantiateViewController(withIdentifier: "help") as! HelpViewController
+        
+        self.present(helpView, animated: true, completion: nil) */
     }
     
     // Button used to exit the account menu and go back to the Rest List
