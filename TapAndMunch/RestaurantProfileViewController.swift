@@ -9,12 +9,12 @@
 import UIKit
 
 class RestaurantProfileViewController: UIViewController {
-
-    @IBOutlet weak var restProfileScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(restProfileScrollView)
+
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -23,10 +23,5 @@ class RestaurantProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        restProfileScrollView.contentSize = CGSize(width: 375, height: 870)
-    }
 }
 

@@ -12,6 +12,7 @@ class RestaurantListViewController: UIViewController, UITableViewDataSource, UIT
 
     var signInTransition: String = ""
     
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -47,4 +48,15 @@ class RestaurantListViewController: UIViewController, UITableViewDataSource, UIT
         
         return (cell)
     }
+    
+    @IBAction func accountEditButton(_ sender: AnyObject) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let accountView = storyboard.instantiateViewController(withIdentifier: "accountInfo") as! AccountViewController
+        
+        self.present(accountView, animated: true, completion: nil)
+
+    }
+    
 }

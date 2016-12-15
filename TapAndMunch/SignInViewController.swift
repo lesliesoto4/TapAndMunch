@@ -52,8 +52,6 @@ class SignInViewController: UIViewController {
                 
                 self.present(restListView, animated: true, completion: nil)
                 
-                
-                
                 print("Logging in")
             }
             else if (usernameInput == usernameActive) && (passwordInput != passwordActive) {
