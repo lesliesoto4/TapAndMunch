@@ -212,7 +212,7 @@
         <!--Order History View Controller-->
         <scene sceneID="E1W-kq-bZ6">
             <objects>
-                <viewController id="OMg-Do-niy" customClass="OrderHistoryViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="orderHist" id="OMg-Do-niy" customClass="OrderHistoryViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cUU-SZ-JQ0"/>
                         <viewControllerLayoutGuide type="bottom" id="MKZ-JU-FmL"/>
@@ -350,12 +350,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qc8-1s-im8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="-1310"/>
+            <point key="canvasLocation" x="820" y="-1200"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="KJ4-PA-Ypn">
             <objects>
-                <viewController id="VIX-RA-z2I" customClass="SettingsViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settings" id="VIX-RA-z2I" customClass="SettingsViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ea1-iF-D5a"/>
                         <viewControllerLayoutGuide type="bottom" id="7LK-eG-kN7"/>
@@ -461,7 +461,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JL2-91-tzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1498" y="-1310"/>
+            <point key="canvasLocation" x="1497" y="-1200"/>
         </scene>
         <!--Terms Condition View Controller-->
         <scene sceneID="aqb-71-VKj">
@@ -713,7 +713,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </scrollView>
             </objects>
-            <point key="canvasLocation" x="2841" y="-1027"/>
+            <point key="canvasLocation" x="2185" y="-1200"/>
         </scene>
         <!--Restaurant Profile View Controller-->
         <scene sceneID="NHn-6Z-aRt">
@@ -1078,20 +1078,12 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default_user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="daa-k3-xdp">
-                                                <frame key="frameInset" minX="260" minY="26" width="31" height="33"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alerts_icon" translatesAutoresizingMaskIntoConstraints="NO" id="a4T-Dh-7Xl">
                                                 <frame key="frameInset" minX="299" minY="28" width="27" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="order_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5mb-Q2-cw8">
                                                 <frame key="frameInset" minX="332" minY="25" width="38" height="37"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exit_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZlP-QB-Cqg">
-                                                <frame key="frameInset" minY="31" width="46" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_____________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhY-N1-5Sy">
@@ -1105,7 +1097,7 @@
                                                 <frame key="frameInset" minY="68" width="375" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVG-Ff-hvH">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome, Juan!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVG-Ff-hvH">
                                                         <frame key="frameInset" minX="8" minY="10" width="184" height="45"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="21"/>
@@ -1113,57 +1105,86 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.94509803921568625" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dys-4E-spA">
-                                                <frame key="frameInset" minY="129" width="375" height="136"/>
+                                                <frame key="frameInset" minY="129" width="375" height="127"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E9-Jj-nJV">
-                                                        <frame key="frameInset" minX="8" minY="8" width="184" height="45"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8W-Hr-dKp">
+                                                        <frame key="frameInset" minX="3" minY="46" width="141" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="21"/>
-                                                        <color key="textColor" red="0.92941176469999998" green="0.4823529412" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-c6-twj">
-                                                        <frame key="frameInset" minX="8" minY="50" width="184" height="45"/>
+                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="19"/>
+                                                        <state key="normal" title="Edit Account">
+                                                            <color key="titleColor" red="0.92941176469999998" green="0.47450980390000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="editAccountInfo:" destination="PWL-3v-FmZ" eventType="touchUpInside" id="Mcb-Uk-mxG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSJ-Gv-OgD">
+                                                        <frame key="frameInset" minX="8" minY="8" width="141" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="21"/>
-                                                        <color key="textColor" red="0.92941176469999998" green="0.4823529412" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUb-dN-e8k">
-                                                        <frame key="frameInset" minX="8" minY="91" width="184" height="45"/>
+                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="19"/>
+                                                        <state key="normal" title="Order History">
+                                                            <color key="titleColor" red="0.92941176469999998" green="0.47450980390000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="orderHistory:" destination="PWL-3v-FmZ" eventType="touchUpInside" id="X2G-xL-zBi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fn-mg-Nm6">
+                                                        <frame key="frameInset" minY="84" width="119" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="21"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                                        <state key="normal" title="Sign Out">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="signOut:" destination="PWL-3v-FmZ" eventType="touchUpInside" id="XkB-FY-gKn"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.94509803921568625" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKF-RQ-bm9">
-                                                <frame key="frameInset" minY="273" width="375" height="394"/>
+                                                <frame key="frameInset" minY="264" width="375" height="403"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCB-g1-SCe">
-                                                        <frame key="frameInset" minX="8" minY="8" width="198" height="45"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAi-yZ-pJ5">
+                                                        <frame key="frameInset" minX="12" minY="10" width="188" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="21"/>
-                                                        <color key="textColor" red="0.92941176469999998" green="0.4823529412" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SV-32-Unv">
-                                                        <frame key="frameInset" minX="8" minY="43" width="198" height="45"/>
+                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="19"/>
+                                                        <state key="normal" title="Terms &amp; Conditions">
+                                                            <color key="titleColor" red="0.92941176469999998" green="0.47450980390000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="termsCond:" destination="PWL-3v-FmZ" eventType="touchUpInside" id="XVW-gB-DCs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctf-bo-WBN">
+                                                        <frame key="frameInset" minX="9" minY="48" width="53" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="21"/>
-                                                        <color key="textColor" red="0.92941176469999998" green="0.4823529412" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="19"/>
+                                                        <state key="normal" title="Help">
+                                                            <color key="titleColor" red="0.92941176469999998" green="0.47450980390000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="helpMenu:" destination="PWL-3v-FmZ" eventType="touchUpInside" id="boq-mE-uOq"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.94509803921568625" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qS-i0-1vs">
+                                                <frame key="frameInset" minX="12" minY="35" width="23" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="exit_account" image="exit_icon"/>
+                                                <connections>
+                                                    <action selector="accountEditButton:" destination="brS-NK-xzJ" eventType="touchUpInside" id="tgc-LY-5aM"/>
+                                                    <action selector="exitAccount:" destination="PWL-3v-FmZ" eventType="touchUpInside" id="yHP-9r-Vgw"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.92941176469999998" green="0.47843137250000001" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -1176,7 +1197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eL-eI-qnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1498" y="-568"/>
+            <point key="canvasLocation" x="1497" y="-518"/>
         </scene>
     </scenes>
     <resources>
