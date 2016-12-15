@@ -1,5 +1,5 @@
 //
-//  AddressOrderViewController.swift
+//  PaymentOrderViewController.swift
 //  TapAndMunch
 //
 //  Created by Leslie Soto on 12/15/16.
@@ -8,21 +8,20 @@
 
 import UIKit
 
-class AddressOrderViewController: UIViewController {
+class PaymentOrderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
+
     @IBAction func backButton(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let chooseOrderView = storyboard.instantiateViewController(withIdentifier: "chooseOrder") as! ChooseOrderViewController
+        let addressOrderView = storyboard.instantiateViewController(withIdentifier: "addressOrder") as! AddressOrderViewController
         
-        self.present(chooseOrderView, animated: true, completion: nil)
+        self.present(addressOrderView, animated: true, completion: nil)
     }
-
     
     @IBAction func accountEditButton(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -30,15 +29,15 @@ class AddressOrderViewController: UIViewController {
         let accountView = storyboard.instantiateViewController(withIdentifier: "accountInfo") as! AccountViewController
         
         self.present(accountView, animated: true, completion: nil)
-    }
 
-    @IBAction func confirmAddress(_ sender: AnyObject) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let paymentOrderView = storyboard.instantiateViewController(withIdentifier: "paymentOrder") as! PaymentOrderViewController
-        
-        self.present(paymentOrderView, animated: true, completion: nil)
     }
     
-
+    @IBAction func confirmPayment(_ sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let confirmOrderView = storyboard.instantiateViewController(withIdentifier: "confirmOrder") as! ConfirmOrderViewController
+        
+        self.present(confirmOrderView, animated: true, completion: nil)
+    }
+    
 }

@@ -1,5 +1,5 @@
 //
-//  AddressOrderViewController.swift
+//  ConfirmOrderViewController.swift
 //  TapAndMunch
 //
 //  Created by Leslie Soto on 12/15/16.
@@ -8,21 +8,19 @@
 
 import UIKit
 
-class AddressOrderViewController: UIViewController {
+class ConfirmOrderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    
+
     @IBAction func backButton(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let chooseOrderView = storyboard.instantiateViewController(withIdentifier: "chooseOrder") as! ChooseOrderViewController
+        let paymentOrderView = storyboard.instantiateViewController(withIdentifier: "paymentOrder") as! PaymentOrderViewController
         
-        self.present(chooseOrderView, animated: true, completion: nil)
+        self.present(paymentOrderView, animated: true, completion: nil)
     }
-
     
     @IBAction func accountEditButton(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -31,14 +29,13 @@ class AddressOrderViewController: UIViewController {
         
         self.present(accountView, animated: true, completion: nil)
     }
-
-    @IBAction func confirmAddress(_ sender: AnyObject) {
+    
+    @IBAction func finalOrderConfirm(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let paymentOrderView = storyboard.instantiateViewController(withIdentifier: "paymentOrder") as! PaymentOrderViewController
+        let finalConfirmOrderView = storyboard.instantiateViewController(withIdentifier: "finalConfirmOrder") as! FinalConfirmOrderViewController
         
-        self.present(paymentOrderView, animated: true, completion: nil)
+        self.present(finalConfirmOrderView, animated: true, completion: nil)
     }
     
-
 }

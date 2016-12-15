@@ -22,6 +22,9 @@
 		CE4D657E1DFB40BB008D63B3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D657D1DFB40BB008D63B3 /* SignInViewController.swift */; };
 		CE6F186C1E02574F00D058A3 /* ChooseOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F186B1E02574F00D058A3 /* ChooseOrderViewController.swift */; };
 		CE6F186E1E02642F00D058A3 /* AddressOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F186D1E02642F00D058A3 /* AddressOrderViewController.swift */; };
+		CE6F18701E026AF100D058A3 /* PaymentOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F186F1E026AF100D058A3 /* PaymentOrderViewController.swift */; };
+		CE6F18721E026B3C00D058A3 /* ConfirmOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F18711E026B3C00D058A3 /* ConfirmOrderViewController.swift */; };
+		CE6F18741E026B8000D058A3 /* FinalConfirmOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F18731E026B8000D058A3 /* FinalConfirmOrderViewController.swift */; };
 		CEA58A271DFCC09700BDCF2A /* DummyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA58A261DFCC09700BDCF2A /* DummyUser.swift */; };
 		CEB6FF211DFC8E4500A6AEF7 /* TermsConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6FF201DFC8E4500A6AEF7 /* TermsConditionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,9 @@
 		CE4D657D1DFB40BB008D63B3 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CE6F186B1E02574F00D058A3 /* ChooseOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseOrderViewController.swift; sourceTree = "<group>"; };
 		CE6F186D1E02642F00D058A3 /* AddressOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressOrderViewController.swift; sourceTree = "<group>"; };
+		CE6F186F1E026AF100D058A3 /* PaymentOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOrderViewController.swift; sourceTree = "<group>"; };
+		CE6F18711E026B3C00D058A3 /* ConfirmOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmOrderViewController.swift; sourceTree = "<group>"; };
+		CE6F18731E026B8000D058A3 /* FinalConfirmOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalConfirmOrderViewController.swift; sourceTree = "<group>"; };
 		CEA58A261DFCC09700BDCF2A /* DummyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyUser.swift; sourceTree = "<group>"; };
 		CEB6FF201DFC8E4500A6AEF7 /* TermsConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsConditionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +102,9 @@
 				A3A40E491E01B15E0092B7A8 /* AccountViewController.swift */,
 				CE6F186B1E02574F00D058A3 /* ChooseOrderViewController.swift */,
 				CE6F186D1E02642F00D058A3 /* AddressOrderViewController.swift */,
+				CE6F186F1E026AF100D058A3 /* PaymentOrderViewController.swift */,
+				CE6F18711E026B3C00D058A3 /* ConfirmOrderViewController.swift */,
+				CE6F18731E026B8000D058A3 /* FinalConfirmOrderViewController.swift */,
 			);
 			path = TapAndMunch;
 			sourceTree = "<group>";
@@ -180,11 +189,14 @@
 				CEA58A271DFCC09700BDCF2A /* DummyUser.swift in Sources */,
 				A32C4F331DFF19C800EBDCDB /* OrderHistoryViewController.swift in Sources */,
 				A33AF6941DFCB0F2004ECCEF /* ProductCell.swift in Sources */,
+				CE6F18721E026B3C00D058A3 /* ConfirmOrderViewController.swift in Sources */,
 				A33AF6961DFCB127004ECCEF /* RestaurantListViewController.swift in Sources */,
 				A32C4F371DFF60C600EBDCDB /* RestaurantProfileViewController.swift in Sources */,
 				CEB6FF211DFC8E4500A6AEF7 /* TermsConditionViewController.swift in Sources */,
 				CE4D656C1DFB3A23008D63B3 /* AppDelegate.swift in Sources */,
+				CE6F18741E026B8000D058A3 /* FinalConfirmOrderViewController.swift in Sources */,
 				A32C4F351DFF2D3800EBDCDB /* PastOrderCell.swift in Sources */,
+				CE6F18701E026AF100D058A3 /* PaymentOrderViewController.swift in Sources */,
 				A32C4F311DFF19AF00EBDCDB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

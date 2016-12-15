@@ -47,4 +47,3 @@ class RestaurantProfileViewController: UIViewController {
         self.present(accountView, animated: true, completion: nil)
     }
 }
-
