@@ -10,9 +10,14 @@ import UIKit
 
 class ChooseOrderViewController: UIViewController {
     
+    @IBOutlet weak var lbl1: UILabel!
+    @IBOutlet weak var lbl2: UILabel!
+    
+    var lbl1_value: Int = 0
+    var total_cost: Double = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     @IBAction func backButton(_ sender: AnyObject) {
@@ -48,5 +53,19 @@ class ChooseOrderViewController: UIViewController {
         self.present(addressOrderView, animated: true, completion: nil)
     }
     
+    @IBAction func minus1(_ sender: Any) {
+        lbl1_value+=1
+        total_cost = (7.25)*Double(lbl1_value)
+        lbl1.text = String(lbl1_value)
+        lbl2.text = String(format: "%.2f", total_cost)
+    }
     
+    @IBAction func plus1(_ sender: Any) {
+        if(lbl1_value > 0){
+        lbl1_value-=1
+        total_cost = (7.25)*Double(lbl1_value)
+        lbl1.text = String(lbl1_value)
+        lbl2.text = String(format: "%.2f", total_cost)
+        }
+    }
 }
