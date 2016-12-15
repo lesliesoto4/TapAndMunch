@@ -467,7 +467,7 @@
         <!--Terms Condition View Controller-->
         <scene sceneID="aqb-71-VKj">
             <objects>
-                <viewController id="3ic-nY-osb" customClass="TermsConditionViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="termsCond" id="3ic-nY-osb" customClass="TermsConditionViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e2g-t3-y6Z"/>
                         <viewControllerLayoutGuide type="bottom" id="x7r-xg-d61"/>
@@ -1552,13 +1552,6 @@
                                                 <frame key="frameInset" minX="8" minY="131" width="359" height="221"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order Placed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufE-P2-h63">
-                                                        <frame key="frameInset" minX="19" minY="11" width="276" height="26"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="20"/>
-                                                        <color key="textColor" red="0.92941176469999998" green="0.47450980390000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEv-cj-NlP">
                                                         <frame key="frameInset" minX="80" minY="183" width="199" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

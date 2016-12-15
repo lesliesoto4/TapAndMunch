@@ -39,6 +39,4 @@ class AddressOrderViewController: UIViewController {
         
         self.present(paymentOrderView, animated: true, completion: nil)
     }
-    
-
 }

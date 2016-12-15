@@ -44,7 +44,11 @@ class AccountViewController: UIViewController {
     }
     
     @IBAction func termsCond(_ sender: AnyObject) {
-        // TO DO
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let termsCondView = storyboard.instantiateViewController(withIdentifier: "termsCond") as! TermsConditionViewController
+        
+        self.present(termsCondView, animated: true, completion: nil)
     }
     
     @IBAction func helpMenu(_ sender: AnyObject) {
