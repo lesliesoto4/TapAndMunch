@@ -9,7 +9,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="H0B-9J-OsH">
             <objects>
-                <viewController id="OvT-VQ-d8f" customClass="SignInViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signIn" id="OvT-VQ-d8f" customClass="SignInViewController" customModule="TapAndMunch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qFN-F5-omH"/>
                         <viewControllerLayoutGuide type="bottom" id="xIt-Of-IUk"/>

@@ -39,7 +39,7 @@ class SignInViewController: UIViewController {
         let passwordInput = passwordInputTextField.text
         
         // Both inputs exist
-        if usernameInput != nil && passwordInput != nil {
+        if (usernameInput != nil && passwordInput != nil) {
             
             print("Both inputs do exist")
             
@@ -54,21 +54,17 @@ class SignInViewController: UIViewController {
                 
                 print("Logging in")
             }
-            else if (usernameInput == usernameActive) && (passwordInput != passwordActive) {
-                print("Correct email but incorrect password")
+            else if (usernameInput == "") || (passwordInput == "") {
+                print("Missing Credentials")
                 
                 // Creation of alert controller (message box)
-                let alertController = UIAlertController(title: "Incorrect Password", message: "The password you entered is incorrect. Please try again.", preferredStyle: .alert)
+                let alertController = UIAlertController(title: "Missing Credentials", message: "Oops! You forgot to enter a username and/or password. Please try again.", preferredStyle: .alert)
                 // Creation of dismissal button to be added to alert message box
                 let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 //Addition of dismissal button to alert message box
                 alertController.addAction(defaultAction)
                 // Present message in foreground
-                self.present(alertController, animated: true, completion: nil)
-                
-                // Remove incorrect password
-                passwordInputTextField.text = ""
-                
+                self.present(alertController, animated: true, completion: nil)                
             }
             else {
                 print("Incorrect email or password")

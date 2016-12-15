@@ -36,7 +36,11 @@ class AccountViewController: UIViewController {
     }
     
     @IBAction func signOut(_ sender: AnyObject) {
-        // TO DO
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let signInView = storyboard.instantiateViewController(withIdentifier: "signIn") as! SignInViewController
+        
+        self.present(signInView, animated: true, completion: nil)
     }
     
     @IBAction func termsCond(_ sender: AnyObject) {
