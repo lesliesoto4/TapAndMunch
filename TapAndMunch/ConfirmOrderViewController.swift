@@ -30,6 +30,14 @@ class ConfirmOrderViewController: UIViewController {
         self.present(accountView, animated: true, completion: nil)
     }
     
+    @IBAction func cancelOrder(_ sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let restListView = storyboard.instantiateViewController(withIdentifier: "restList") as! RestaurantListViewController
+        
+        self.present(restListView, animated: true, completion: nil)
+    }
+    
     @IBAction func finalOrderConfirm(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
