@@ -33,8 +33,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell", for: indexPath) as! SettingsCell
         
-        cell.account_info.text = tableItems[indexPath.row]
-        cell.account_subinformation.text = dummyValues[indexPath.row]
+        cell.account_info.text = dummyValues[indexPath.row]
+        cell.account_subinformation.text = tableItems[indexPath.row]
         
         return (cell)
     }
