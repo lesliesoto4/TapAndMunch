@@ -10,9 +10,12 @@ import UIKit
 
 class PaymentOrderViewController: UIViewController {
 
+    var val1 = ""
+    var val2 = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        val2 = val1
     }
 
     @IBAction func backButton(_ sender: AnyObject) {
@@ -44,6 +47,8 @@ class PaymentOrderViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let confirmOrderView = storyboard.instantiateViewController(withIdentifier: "confirmOrder") as! ConfirmOrderViewController
+        
+        confirmOrderView.value1 = val2
         
         self.present(confirmOrderView, animated: true, completion: nil)
     }

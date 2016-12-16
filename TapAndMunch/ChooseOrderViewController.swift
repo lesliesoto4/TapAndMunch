@@ -46,11 +46,15 @@ class ChooseOrderViewController: UIViewController {
 
     // Next GUI (address confirmation) in order process
     @IBAction func placeOrder(_ sender: AnyObject) {
+        if(total_cost > 0){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let addressOrderView = storyboard.instantiateViewController(withIdentifier: "addressOrder") as! AddressOrderViewController
         
+        addressOrderView.valuePassed = String(format: "%.2f", total_cost)
+        
         self.present(addressOrderView, animated: true, completion: nil)
+        }
     }
     
     @IBAction func minus1(_ sender: Any) {

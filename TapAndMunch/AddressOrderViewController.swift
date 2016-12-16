@@ -10,9 +10,13 @@ import UIKit
 
 class AddressOrderViewController: UIViewController {
 
+    var valuePassed2 = ""
+    
+    var valuePassed = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        valuePassed2 = valuePassed
     }
     
     @IBAction func backButton(_ sender: AnyObject) {
@@ -46,6 +50,8 @@ class AddressOrderViewController: UIViewController {
         
         let paymentOrderView = storyboard.instantiateViewController(withIdentifier: "paymentOrder") as! PaymentOrderViewController
         
+        paymentOrderView.val1 = valuePassed2
+            
         self.present(paymentOrderView, animated: true, completion: nil)
     }
 }

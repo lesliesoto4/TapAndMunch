@@ -13,7 +13,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     let tableItems = ["Name", "Email", "Password", "Address", "Payment Method"]
-    let dummyValues = ["Juan Del Pueblo", "user@tp.com", "", "Stefani UPRM, Mayagüez, P.R. 00682", "PayPal"]
+    let dummyValues = ["Juan Del Pueblo", "user@tp.com", "*****", "Stefani UPRM, Mayagüez, P.R. 00682", "Visa"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

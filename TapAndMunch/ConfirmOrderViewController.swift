@@ -10,8 +10,25 @@ import UIKit
 
 class ConfirmOrderViewController: UIViewController {
 
+    @IBOutlet weak var order_cost: UILabel!
+    @IBOutlet weak var ivu: UILabel!
+    @IBOutlet weak var service_fee: UILabel!
+    @IBOutlet weak var grand_total: UILabel!
+    
+    var value1 = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let temp = Double(value1)
+        let temp_ivu = Double(value1)! * 0.115
+        let temp_fee = Double(value1)! * 0.10
+        
+        order_cost.text = String(format: "%.2f", temp!)
+        ivu.text = String(format: "%.2f", temp_ivu)
+        service_fee.text = String(format: "%.2f", temp_fee)
+        grand_total.text = String(format: "%.2f", temp! + temp_ivu + temp_fee)
+        
     }
 
     @IBAction func backButton(_ sender: AnyObject) {
